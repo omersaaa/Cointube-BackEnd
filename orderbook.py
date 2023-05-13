@@ -5,6 +5,7 @@ from api.models import Session, User, Order, Stock, Portfolio
 
 
 def update_prices():
+    
     while True:
         session = Session()
 
@@ -175,4 +176,5 @@ def update_prices():
 
                         session.commit()
 
-            time.sleep(10)
+        time.sleep(1000)
+        

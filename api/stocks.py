@@ -9,6 +9,7 @@ stocks = Blueprint("stocks", __name__, url_prefix="/stocks")
 @stocks.route("/add", methods=["POST"])
 def add_stock():
     data = request.json
+    
     name = data["name"]
     symbol = data["symbol"]
     price = data["price"]

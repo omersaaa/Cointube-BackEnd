@@ -9,7 +9,7 @@ from api.users import users
 from api.Portfolio import portfolios
 from api.orderb import ppp
 
-from orderbook import update_prices
+# from orderbook import update_prices
 
 # from api.orders import app
 # from api.users import app
@@ -29,7 +29,8 @@ def hello_world():
 
 if __name__ == "__main__":
     # Start the background task to update prices
-    update_prices()
+    # update_prices()
     # t = threading.Thread(target=update_prices)
+    print('start')
     # t.start()
     app.run()
